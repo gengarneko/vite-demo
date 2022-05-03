@@ -9,19 +9,19 @@ specifiers:
   eslint: ^8.14.0
   eslint-config-alloy: ^4.5.1
   eslint-plugin-react: ^7.29.4
-  jotai: ^1.6.5
   prettier: ^2.6.2
   react: ^18.0.0
   react-dom: ^18.0.0
+  recoil: ^0.7.2
   rxjs: ^7.5.5
   typescript: ^4.6.3
   vite: ^2.9.5
   vitest: ^0.10.0
 
 dependencies:
-  jotai: 1.6.5_react@18.0.0
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
+  recoil: 0.7.2_zpnidt7m3osuk7shl3s4oenomq
   rxjs: 7.5.5
 
 devDependencies:
@@ -1377,6 +1377,10 @@ packages:
       slash: 3.0.0
     dev: true
 
+  /hamt_plus/1.0.2:
+    resolution: {integrity: sha1-4hwlKWjH4zsg9qGwlM2FeHomVgE=}
+    dev: false
+
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
     dev: true
@@ -1552,43 +1556,6 @@ packages:
   /isexe/2.0.0:
     resolution: {integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=}
     dev: true
-
-  /jotai/1.6.5_react@18.0.0:
-    resolution: {integrity: sha512-B+DGV5ALIkIeyA1Bi9yBpdGmcWkmDS/p8C1XFYx9jFBs+lkeOdu0WAozAPCG4Qq1EcQ68vF+07HmPYFN5kf9OQ==}
-    engines: {node: '>=12.7.0'}
-    peerDependencies:
-      '@babel/core': '*'
-      '@babel/template': '*'
-      '@urql/core': '*'
-      immer: '*'
-      optics-ts: '*'
-      react: '>=16.8'
-      react-query: '*'
-      valtio: '*'
-      wonka: '*'
-      xstate: '*'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      '@babel/template':
-        optional: true
-      '@urql/core':
-        optional: true
-      immer:
-        optional: true
-      optics-ts:
-        optional: true
-      react-query:
-        optional: true
-      valtio:
-        optional: true
-      wonka:
-        optional: true
-      xstate:
-        optional: true
-    dependencies:
-      react: 18.0.0
-    dev: false
 
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -1877,6 +1844,23 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /recoil/0.7.2_zpnidt7m3osuk7shl3s4oenomq:
+    resolution: {integrity: sha512-OT4pI7FOUHcIoRtjsL5Lqq+lFFzQfir4MIbUkqyJ3nqv3WfBP1pHepyurqTsK5gw+T+I2R8+uOD28yH+Lg5o4g==}
+    peerDependencies:
+      react: '>=16.13.1'
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      hamt_plus: 1.0.2
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
     dev: false
 
   /regexp.prototype.flags/1.4.3:
