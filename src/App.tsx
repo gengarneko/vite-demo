@@ -1,11 +1,9 @@
-import { Counter, Counter2 } from './jotai/Demo';
+import { Index } from './index';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
-      <Counter2 />
-      <button>showModal</button>
+      <Index />
     </div>
   );
 }
